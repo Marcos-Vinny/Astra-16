@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glifos do Portal — ΛSTRA-16 : ALLIΛNCE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* Extras só desta página — não mexe no styles.css principal */
+  .portal-panel{
+    background: linear-gradient(180deg, rgba(46,54,92,0.55), rgba(18,20,34,0.8));
+    border: 1px solid rgba(160,180,230,0.28);
+    padding: clamp(28px,5vw,48px) 20px;
+    text-align:center;
+    margin-top:36px;
+  }
+  .glyph-row{
+    display:flex; justify-content:center; align-items:center;
+    gap:clamp(6px,1.6vw,16px); flex-wrap:wrap;
+  }
+  .glyph-row svg{
+    width:clamp(24px,4vw,34px); height:clamp(24px,4vw,34px);
+    color:#e3e9fb;
+    filter: drop-shadow(0 0 5px rgba(170,190,255,0.45));
+    flex-shrink:0;
+  }
+  .galaxy-label{
+    margin-top:22px; font-family:var(--font-display);
+    color:#cdd6f2; letter-spacing:0.08em; font-size:15px;
+  }
+  .address-note{
+    margin-top:10px; font-size:12.5px; color:var(--text-dim); letter-spacing:0.05em;
+  }
+  .back-link{
+    display:inline-block; margin-bottom:8px; font-size:13.5px; color:var(--text-dim); text-decoration:none;
+  }
+  .back-link:hover{ color:var(--gold-bright); }
+</style>
+</head>
+<body>
+<div class="bg-field"></div>
+<div class="stars"></div>
+
+<nav>
+  <div class="brand">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L15 10L12 22L9 10Z" stroke="#f3dfa6" stroke-width="1.2"/><ellipse cx="12" cy="11" rx="8.5" ry="3.2" stroke="#f3dfa6" stroke-width="1"/></svg>
+    ΛSTRA-16
+  </div>
+  <div class="navlinks" style="display:flex;">
+    <a href="index.html">← Voltar ao início</a>
+  </div>
+</nav>
+
+<section style="padding-top:80px;">
+  <div class="wrap narrow" style="text-align:center;">
+    <div class="kicker">Coordenadas de acesso</div>
+    <h2 style="margin-top:8px;">Glifos do Portal</h2>
+    <p>Estes são os glifos de endereço do portal que leva ao território da ΛSTRA-16. Digite-os na ordem, no portal de qualquer sistema, pra chegar até nós.</p>
+
+    <div class="portal-panel">
+      <img src="images/portal-address.png" alt="Glifos do endereço do portal — Galáxia de Euclides" style="max-width:100%; width:560px; border-radius:2px; margin:0 auto; display:block;">
+      <div class="galaxy-label">Galáxia de Euclides</div>
+      <div class="address-note">Insira os 12 glifos nesta ordem no portal ativo mais próximo</div>
+    </div>
+
+    <div class="steps" style="margin-top:44px; text-align:left;">
+      <div class="step">
+        <div class="mark">Λ</div>
+        <h3>Ative um portal</h3>
+        <p>Encontre um Monólito Alienígena em qualquer planeta pra localizar o portal mais próximo do seu sistema.</p>
+      </div>
+      <div class="step">
+        <div class="mark">Λ</div>
+        <h3>Digite os glifos</h3>
+        <p>No painel do portal, insira os 12 símbolos acima na mesma ordem em que aparecem aqui.</p>
+      </div>
+      <div class="step">
+        <div class="mark">Λ</div>
+        <h3>Atravesse</h3>
+        <p>Confirme o endereço e atravesse o portal. Você vai chegar direto ao território da ΛSTRA-16.</p>
+      </div>
+    </div>
+
+    <a class="back-link" href="index.html" style="display:block; margin-top:56px;">← Voltar ao início</a>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
